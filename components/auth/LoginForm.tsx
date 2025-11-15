@@ -53,7 +53,7 @@ export function LoginForm() {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
         {/* Social Login Buttons */}
-        <div className="space-y-3">
+        {/* <div className="space-y-3">
           <Button
             type="button"
             variant="outline"
@@ -72,9 +72,9 @@ export function LoginForm() {
             </span>
             Login with Github
           </Button>
-        </div>
+        </div> */}
 
-        <div className="relative">
+        {/* <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-slate-300"></div>
           </div>
@@ -83,7 +83,7 @@ export function LoginForm() {
               Or continue with Email
             </span>
           </div>
-        </div>
+        </div> */}
 
         {/* Email Field */}
         <FormField

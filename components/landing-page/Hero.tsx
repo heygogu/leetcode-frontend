@@ -58,17 +58,17 @@ const Hero = () => {
 
           <div className="pt-8 flex items-center justify-center gap-12 text-sm text-muted-foreground">
             <div>
-              <div className="text-3xl font-bold text-primary">5000+</div>
+              <div className="text-4xl font-bold text-primary">5000+</div>
               <div>Problems</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div>
-              <div className="text-3xl font-bold text-primary">100K+</div>
+              <div className="text-4xl font-bold text-primary">100K+</div>
               <div>Users</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div>
-              <div className="text-3xl font-bold text-primary">50+</div>
+              <div className="text-4xl font-bold text-primary">50+</div>
               <div>Languages</div>
             </div>
           </div>
