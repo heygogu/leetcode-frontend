@@ -2,15 +2,13 @@ import React from "react";
 import DarkMode from "../DarkMode";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import AppLogo from "../AppLogo";
 
 const Header = () => {
   return (
-    <header>
+    <header className="px-4 pt-3 ">
       <div className="flex items-center justify-between ">
-        <div className="flex items-center gap-1 font-bold text-3xl">
-          <h1 className="text-primary">algo</h1>
-          <h1>arena</h1>
-        </div>
+        <AppLogo icon={true} size="30px" weight="bold" />
 
         <nav>
           <ul className="flex gap-2 text-md font-semibold">

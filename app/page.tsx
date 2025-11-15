@@ -1,9 +1,17 @@
 import Image from "next/image";
 import Header from "@/components/landing-page/Header";
+import Hero from "@/components/landing-page/Hero";
+import Features from "@/components/landing-page/Features";
+import CodeShowcase from "@/components/landing-page/CodeShowcase";
+import Footer from "@/components/landing-page/Footer";
 export default function Home() {
   return (
-    <div className="min-h-screen px-10 py-5">
+    <div className="min-h-screen">
       <Header />
+      <Hero />
+      <Features />
+      <CodeShowcase />
+      <Footer />
     </div>
   );
 }

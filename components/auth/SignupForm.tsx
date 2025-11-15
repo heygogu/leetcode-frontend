@@ -72,15 +72,9 @@ export function SignupForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-slate-950 font-medium">
-                Full Name
-              </FormLabel>
+              <FormLabel className=" font-medium">Full Name</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="John Doe"
-                  {...field}
-                  className="bg-slate-50 border-slate-200 text-slate-950 placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500"
-                />
+                <Input placeholder="John Doe" {...field} className=" " />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -93,16 +87,9 @@ export function SignupForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-slate-950 font-medium">
-                Email Address
-              </FormLabel>
+              <FormLabel className=" font-medium">Email Address</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="you@example.com"
-                  type="email"
-                  {...field}
-                  className="bg-slate-50 border-slate-200 text-slate-950 placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500"
-                />
+                <Input placeholder="john@example.com" type="email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -115,21 +102,11 @@ export function SignupForm() {
           name="password"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-slate-950 font-medium">
-                Password
-              </FormLabel>
+              <FormLabel className=" font-medium">Password</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="••••••••••••"
-                  type="password"
-                  {...field}
-                  className="bg-slate-50 border-slate-200 text-slate-950 placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500"
-                />
+                <Input placeholder="••••••••••••" type="password" {...field} />
               </FormControl>
               <FormMessage />
-              <p className="text-xs text-slate-500 mt-1">
-                Must contain uppercase letter and number
-              </p>
             </FormItem>
           )}
         />
@@ -140,16 +117,9 @@ export function SignupForm() {
           name="confirmPassword"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-slate-950 font-medium">
-                Confirm Password
-              </FormLabel>
+              <FormLabel className=" font-medium">Confirm Password</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="••••••••••••"
-                  type="password"
-                  {...field}
-                  className="bg-slate-50 border-slate-200 text-slate-950 placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500"
-                />
+                <Input placeholder="••••••••••••" type="password" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -161,28 +131,22 @@ export function SignupForm() {
           control={form.control}
           name="terms"
           render={({ field }) => (
-            <FormItem className="flex flex-row items-start space-x-2 space-y-0 py-2">
+            <FormItem className="flex flex-row items-center space-x-2 space-y-0 py-2">
               <FormControl>
                 <Checkbox
                   checked={field.value}
                   onCheckedChange={field.onChange}
-                  className="border-slate-300 mt-1"
+                  className=""
                 />
               </FormControl>
-              <div className="flex-1">
-                <FormLabel className="text-sm text-slate-600 font-normal cursor-pointer">
+              <div className="">
+                <FormLabel className="text-sm text-slate-600 inline font-normal cursor-pointer">
                   I agree to the{" "}
-                  <a
-                    href="#"
-                    className="text-blue-600 hover:underline font-medium"
-                  >
+                  <a href="#" className="text-primary  font-medium">
                     Terms of Service
                   </a>{" "}
                   and{" "}
-                  <a
-                    href="#"
-                    className="text-blue-600 hover:underline font-medium"
-                  >
+                  <a href="#" className="text-primary font-medium">
                     Privacy Policy
                   </a>
                 </FormLabel>
@@ -196,7 +160,7 @@ export function SignupForm() {
         <Button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 h-11 font-semibold mt-6"
+          className="w-full bg-primary h-11 font-semibold mt-6"
         >
           {isLoading ? (
             <>

@@ -1,34 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { Eye, EyeOff } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
 import { LoginForm } from "@/components/auth/LoginForm";
 import Image from "next/image";
+import AppLogo from "@/components/AppLogo";
+import SplitImage from "@/components/auth/SplitImage";
 
 export default function LoginPage() {
   return (
     <div className=" grid md:grid-cols-2 bg-background min-h-svh">
       {/* Left Panel - Dark */}
-      <div className="hidden md:flex flex-col justify-between">
-        <div className="relative w-full h-screen  overflow-hidden rounded-r-4xl">
-          {/* Logo on top */}
-          <div className="absolute top-6 left-6 z-20 flex items-center gap-1 font-bold text-3xl text-white drop-shadow-lg">
-            <span className="text-primary">algo</span> arena
-          </div>
-
-          {/* Background Image */}
-          <Image
-            src="https://res.cloudinary.com/mhmd/image/upload/v1555917661/art-colorful-contemporary-2047905_dxtao7.jpg"
-            alt="login-image"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
+      <SplitImage pageType="login" />
 
       {/* Right Panel - Light Content */}
       <div className="flex flex-col  justify-between items-center h-screen overflow-hidden p-8 md:p-12">
@@ -65,8 +47,8 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <div className="text-sm text-neutral-400 text-center">
-          Protected by <span className="text-primary">algo</span> arena
+        <div className="text-sm text-neutral-400 text-center ">
+          Protected by <AppLogo icon={false} size="14px" weight="bold" />
         </div>
       </div>
     </div>
