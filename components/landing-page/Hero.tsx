@@ -5,21 +5,21 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 -top-5">
         <img
           src="/hero-bg.jpg"
           alt="Hero background"
           className="w-full h-full object-cover opacity-15 dark:opacity-50 blur-[1px] dark:blur-0"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-b 
+          className="absolute inset-0 bg-linear-to-b 
       from-white/60 via-white/90 to-white
       dark:from-background/50 dark:via-background/80 dark:to-background"
         />
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 z-10">
+      <div className=" px-4 z-10 -top-20 relative">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="inline-block">
             <span className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
@@ -76,7 +76,7 @@ const Hero = () => {
       </div>
 
       {/* Gradient Blur Effect */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-primary/20 blur-[120px] rounded-full" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-primary/20 blur-[200px] rounded-full" />
     </section>
   );
 };

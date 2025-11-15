@@ -14,7 +14,7 @@ const AppLogo = (props: Props) => {
   };
 
   return (
-    <span className="inline-flex items-center gap-2">
+    <span className="inline-flex items-center gap-2 whitespace-nowrap">
       {props.icon && (
         <Code2
           size={props.size}

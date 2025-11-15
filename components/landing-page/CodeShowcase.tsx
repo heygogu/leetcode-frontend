@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 
 const CodeShowcase = () => {
   return (
-    <section id="problems" className="py-24 bg-card/30">
+    <section id="problems" className="py-24">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">

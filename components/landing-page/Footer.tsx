@@ -1,9 +1,10 @@
 import { Code2, Github, Twitter, Linkedin } from "lucide-react";
 import AppLogo from "../AppLogo";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border bg-card/30 py-12">
+    <footer className="border-t border-border  py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
@@ -95,34 +96,33 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Follow Us</h3>
             <div className="flex gap-4">
-              <a
-                href="#"
+              <Link
+                href="https://github.com/heygogu/leetcode-frontend"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Github className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://x.com/heygogu"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
-
-        <div className="pt-8 flex justify-center items-center border-t border-border text-center text-sm text-muted-foreground">
-          <p className="whitespace-nowrap">
-            &copy; {new Date().getFullYear()}{" "}
-            <AppLogo size="16px" weight="bold" />. All rights reserved.
-          </p>
-        </div>
+      </div>
+      <div className="pt-8 flex justify-center items-center border-t border-border text-center text-sm text-muted-foreground">
+        <p className="whitespace-nowrap">
+          &copy; {new Date().getFullYear()}{" "}
+          <AppLogo size="16px" weight="bold" />. All rights reserved.
+        </p>
       </div>
     </footer>
   );

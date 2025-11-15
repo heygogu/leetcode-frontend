@@ -6,7 +6,7 @@ import AppLogo from "../AppLogo";
 
 const Header = () => {
   return (
-    <header className="px-4 pt-3 ">
+    <header className="fixed inset-0 container mx-auto h-[70px] backdrop-blur-sm z-50 pt-5">
       <div className="flex items-center justify-between ">
         <AppLogo icon={true} size="30px" weight="bold" />
 
