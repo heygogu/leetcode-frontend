@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 -top-5">
+      <div className="absolute inset-0 z-0 -top-2">
         <img
           src="/hero-bg.jpg"
           alt="Hero background"
@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className=" px-4 z-10 -top-20 relative">
+      <div className=" px-4 z-10 -top-5 relative">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="inline-block">
             <span className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
