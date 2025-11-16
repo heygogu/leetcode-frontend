@@ -3,9 +3,57 @@ import { ArrowRight, Play } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 -top-2">
+    <section className="relative dark:mask-b-from-90% dark:mask-b-to-100% min-h-screen flex items-center justify-center overflow-hidden ">
+      <div className="min-h-screen w-full absolute mask-t-from-0%">
+        {/* Dashed Grid */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, #e7e5e4 1px, transparent 1px),
+        linear-gradient(to bottom, #e7e5e4 1px, transparent 1px)
+      `,
+            backgroundSize: "20px 20px",
+            backgroundPosition: "0 0, 0 0",
+            maskImage: `
+        repeating-linear-gradient(
+          to right,
+          black 0px,
+          black 3px,
+          transparent 3px,
+          transparent 8px
+        ),
+        repeating-linear-gradient(
+          to bottom,
+          black 0px,
+          black 3px,
+          transparent 3px,
+          transparent 8px
+        )
+      `,
+            WebkitMaskImage: `
+        repeating-linear-gradient(
+          to right,
+          black 0px,
+          black 3px,
+          transparent 3px,
+          transparent 8px
+        ),
+        repeating-linear-gradient(
+          to bottom,
+          black 0px,
+          black 3px,
+          transparent 3px,
+          transparent 8px
+        )
+      `,
+            maskComposite: "intersect",
+            WebkitMaskComposite: "source-in",
+          }}
+        />
+        {/* Your Content/Components */}
+      </div>
+      <div className="absolute inset-0 z-0 ">
         <img
           src="/hero-bg.jpg"
           alt="Hero background"
@@ -19,7 +67,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className=" px-4 z-10 -top-5 relative">
+      <div className=" px-4 z-10 -top-2 relative">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="inline-block">
             <span className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
@@ -27,13 +75,13 @@ const Hero = () => {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold dark:text-neutral-300/90 text-neutral-800 transition-colors duration-300  tracking-tight leading-tight">
             Code. Compete.
             <br />
             <span className="text-primary">Conquer.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground md:max-w-2xl max-w-md mx-auto">
+          <p className="text-lg tracking-tight md:text-xl text-muted-foreground md:max-w-2xl max-w-md mx-auto">
             Sharpen your coding skills with thousands of algorithmic challenges.
             Test your solutions in real-time and climb the leaderboard.
           </p>
@@ -61,12 +109,12 @@ const Hero = () => {
               <div className="text-4xl font-bold text-primary">5000+</div>
               <div>Problems</div>
             </div>
-            <div className="w-px h-12 bg-border" />
+            <div className="w-px h-12 bg-primary" />
             <div>
               <div className="text-4xl font-bold text-primary">100K+</div>
               <div>Users</div>
             </div>
-            <div className="w-px h-12 bg-border" />
+            <div className="w-px h-12 bg-primary" />
             <div>
               <div className="text-4xl font-bold text-primary">50+</div>
               <div>Languages</div>
@@ -77,6 +125,20 @@ const Hero = () => {
 
       {/* Gradient Blur Effect */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-primary/20 blur-[200px] rounded-full" />
+      {/* <div className="min-h-screen w-full absolute">
+        <div
+          className="absolute inset-0 z-0 rounded-b-4xl"
+          style={{
+            backgroundImage: `
+        radial-gradient(
+          125% 125% at 50% 10%,
+          var(--glow-start) 40%,
+          var(--glow-end) 100%
+        )
+      `,
+          }}
+        />
+      </div> */}
     </section>
   );
 };

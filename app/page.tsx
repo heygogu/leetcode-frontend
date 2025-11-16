@@ -6,12 +6,14 @@ import CodeShowcase from "@/components/landing-page/CodeShowcase";
 import Footer from "@/components/landing-page/Footer";
 export default function Home() {
   return (
-    <div className="min-h-screen container mx-auto py-5">
-      <Header />
-      <Hero />
-      <Features />
-      <CodeShowcase />
-      <Footer />
-    </div>
+    <>
+      <div className="min-h-screen container mx-auto py-5">
+        <Header />
+        <Hero />
+        <Features />
+        <CodeShowcase />
+        <Footer />
+      </div>
+    </>
   );
 }

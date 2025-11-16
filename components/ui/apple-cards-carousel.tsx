@@ -93,7 +93,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-5 [scrollbar-width:none] md:py-20"
+          className="flex w-full  overflow-x-scroll overscroll-x-auto scroll-smooth py-5 [scrollbar-width:none] md:py-20"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -105,8 +105,8 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
           <div
             className={cn(
-              "flex flex-row justify-start gap-4 pl-4",
-              "mx-auto max-w-7xl" // remove max-w-4xl if you want the carousel to span the full width of its container
+              "flex flex-row  justify-start gap-4 pl-4",
+              "mx-auto max-w-5xl" // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
             {items.map((item, index) => (
@@ -134,14 +134,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         </div>
         <div className="mr-10 relative bottom-10 flex justify-end gap-2">
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-accent disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
             <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
           </button>
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-accent disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
@@ -240,7 +240,7 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="relative z-10 flex h-70 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100  md:w-96 dark:bg-neutral-900"
+        className="relative z-10 flex h-70 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100  md:w-[490px] dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
         <div className="relative z-40 p-8">
@@ -261,7 +261,7 @@ export const Card = ({
           src={card.src}
           alt={card.title}
           fill
-          className="absolute  inset-0 z-10 object-cover"
+          className="absolute hover:scale-105 transition duration-300  inset-0 z-10 object-cover"
         />
       </motion.button>
     </>

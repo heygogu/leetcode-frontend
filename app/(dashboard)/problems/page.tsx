@@ -72,7 +72,7 @@ const Problems = () => {
 
   return (
     <div className="grid grid-cols-5 gap-4 min-h-screen ">
-      <div className="col-span-4 row-span-1">
+      <div className="col-span-4 row-span-1 -mt-2">
         <AppleCardsCarouselDemo />
       </div>
       <div className="col-span-1 row-span-4 sticky top-30 self-start">
@@ -80,7 +80,7 @@ const Problems = () => {
           mode="single"
           selected={date}
           onSelect={(newDate) => newDate && setDate(newDate)}
-          className="rounded-md border"
+          className="rounded-3xl bg-accent"
           classNames={{
             month: "space-y-4",
             caption: "flex justify-center pt-1 relative items-center",
@@ -108,7 +108,7 @@ const Problems = () => {
           <div className="text-sm text-gray-400">5 days left</div>
         </div>
 
-        <div className="border rounded-lg p-4">
+        <div className="border rounded-lg p-4 bg-accent ">
           <h3 className="font-semibold mb-3">Trending Companies</h3>
           <div className="space-y-2">
             {[
@@ -134,35 +134,27 @@ const Problems = () => {
       <div className="col-span-4 row-span-4 rounded-lg overflow-hidden">
         <div className="flex items-center">
           <Input
-            className="max-w-xs m-1  rounded-xl"
+            className="max-w-xs m-1 bg-accent rounded-xl"
             placeholder="Search question"
           />
           <Button size={"icon"} variant={"outline"}>
             <FilterIcon />
           </Button>
         </div>
-        <table className="w-full">
-          <thead className=" border-b border-gray-700">
+        <table className="w-full mt-2 bg-accent/30 ">
+          <thead className=" outline-1 outline-dashed text-primary tracking-wide font-bold ">
             <tr>
-              <th className="text-left p-4 font-semibold text-sm text-gray-400 w-20">
-                ID
-              </th>
-              <th className="text-left p-4 font-semibold text-sm text-gray-400">
-                Title
-              </th>
-              <th className="text-left p-4 font-semibold text-sm text-gray-400 w-32">
-                Acceptance
-              </th>
-              <th className="text-left p-4 font-semibold text-sm text-gray-400 w-32">
-                Difficulty
-              </th>
+              <th className="text-left p-4  text-sm  w-20">ID</th>
+              <th className="text-left p-4  text-sm ">Title</th>
+              <th className="text-left p-4  text-sm  w-32">Acceptance</th>
+              <th className="text-left p-4  text-sm  w-32">Difficulty</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="">
             {LeetcodeProblems.map((problem) => (
               <tr
                 key={problem.id}
-                className="border-b cursor-pointer transition-colors"
+                className="border-b border-dashed border-primary/10 cursor-pointer w-full hover:bg-accent transition-colors "
               >
                 <td className="p-4 text-gray-400">{problem.id}</td>
                 <td className="p-4 font-medium">{problem.title}</td>

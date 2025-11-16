@@ -45,7 +45,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in"
+              className="group p-6 rounded-2xl bg-accent cursor-default border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="mb-4 p-3 rounded-lg bg-primary/10 w-fit group-hover:bg-primary/20 transition-colors">
