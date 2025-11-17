@@ -21,36 +21,36 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Platform</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Problems
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Contests
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Discuss
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Interview
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,36 +59,36 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

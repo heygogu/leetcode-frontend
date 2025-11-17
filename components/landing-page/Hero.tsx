@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -54,9 +55,10 @@ const Hero = () => {
         {/* Your Content/Components */}
       </div>
       <div className="absolute inset-0 z-0 ">
-        <img
+        <Image
           src="/hero-bg.jpg"
           alt="Hero background"
+          fill
           className="w-full h-full object-cover opacity-15 dark:opacity-50 blur-[1px] dark:blur-0"
         />
         <div

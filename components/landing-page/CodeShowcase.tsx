@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 const CodeShowcase = () => {
   return (
@@ -15,9 +16,10 @@ const CodeShowcase = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div className="group relative overflow-hidden rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-            <img
+            <Image
               src={"/code-snippet-1.jpg"}
               alt="Code editor showing Python solution"
+              fill
               className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute top-4 right-4 flex items-center gap-2 bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-full text-sm font-medium">
@@ -27,9 +29,10 @@ const CodeShowcase = () => {
           </div>
 
           <div className="group relative overflow-hidden rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-            <img
+            <Image
               src={"/code-snippet-2.jpg"}
               alt="Code editor showing JavaScript solution"
+              fill
               className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute top-4 right-4 flex items-center gap-2 bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-full text-sm font-medium">
